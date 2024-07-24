@@ -44,6 +44,10 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Clear pip cache 
+      run: |
+        pip cache purge
+
     - name: Install requirements
       working-directory: ./hexo_circle_of_friends
       run: |
